@@ -76,11 +76,21 @@ Em seguida, adicione o arquivo gerado `index.html` no seu fork.
 
 Por fim, responda as questões abaixo no seu `fork`: 
 
-1. Repositório selecionado: <URL_DO_REPOSITORIO_SELECIONADO_AQUI>
+1. Repositório selecionado: https://github.com/OpenInterpreter/open-interpreter
 
-2. Gráfico selecionado: <NOME_DO_GRAFICO_SELECIONADO_AQUI>
+2. Gráfico selecionado: Data structures
   
-3. Explicação: <EXPLICACAO_AQUI>
+3. Explicação: O gráfico mostra a evolução do uso de diferentes estruturas de dados (dictionary, list, tuple, set) entre os anos de 2023 e 2025 no repositório OpenInterpreter.
+ - Datalhamento da evolução ao longo do tempo:
+     - Dictionaries (azul): O crescimento mais expressivo. Partiu de praticamente 0 em 2023 e ultrapassou 450 ocorrências em 2025. Isso indica que a estrutura de mapeamento chave-valor está se tornando central no projeto. Pode estar associada a um maior uso de arquivos de configuração, armazenamento de estados, ou manipulação de JSON, o que é comum em sistemas que interpretam comandos ou interagem com APIs externas.
+     - Lists (rosa): Crescimento consistente, embora mais moderado. O número de listas passa de 0 em 2023 para cerca de 300 em 2025. Isso reflete um uso crescente de coleções ordenadas, talvez para armazenamento de sequências de instruções, tokens ou históricos de execução.
+     - Tuples (laranja): Embora menos frequente, tem um crescimento contínuo. Isso pode indicar um esforço para representar dados imutáveis de maneira mais explícita, algo que pode ser comum em projetos que valorizam segurança e previsibilidade em execuções.
+     - Sets (amarelo): Estável e praticamente inalterado. Isso pode indicar que conjuntos não são uma necessidade frequente no domínio de aplicação do Open Interpreter, ou que seu uso foi substituído por outras abordagens mais controladas, como listas com verificação manual de duplicidade.
 
+  - Considerações sobre boas práticas:
+    -  O aumento expressivo no uso de dicionários pode indicar uma crescente necessidade de armazenar e acessar dados de forma eficiente através de chaves. Dicionários são poderosos para organizar informações não sequenciais e realizar buscas rápidas, o que pode ser uma boa prática em muitas situações.
+    -  O crescimento constante no uso de listas sugere a necessidade contínua de sequências ordenadas de itens que podem ser modificados. Listas são estruturas de dados fundamentais e seu uso crescente é esperado em projetos de software.
+    -  O crescimento mais lento das tuplas pode indicar que elas estão sendo utilizadas para armazenar coleções de itens que não devem ser alterados após a criação. Tuplas oferecem imutabilidade, o que pode ser uma boa prática para garantir a integridade de certos dados.
+    -  A estabilidade no uso de conjuntos pode sugerir que eles são utilizados em cenários específicos onde a unicidade dos elementos e operações de conjunto (união, interseção, diferença) são importantes, mas não são uma necessidade predominante no código.
 
-
+  - Grandes alterações nas curvas: A alteração mais notável é o forte crescimento da curva dos dicionários entre 2024 e 2025. Isso sugere que houve uma mudança significativa na arquitetura ou nas funcionalidades do "open-interpreter" que demandou um uso muito maior de dicionários. 
